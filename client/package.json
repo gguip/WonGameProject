@@ -7,7 +7,9 @@
     "start": "next start",
     "lint": "eslint src --max-warnings=0",
     "test": "jest",
-    "test:watch": "yarn test --watch"
+    "test:watch": "yarn test --watch",
+    "storybook": "start-storybook -s ./public -p 6005",
+    "build-storybook": "build-storybook"
   },
   "husky": {
     "hooks": {
@@ -27,7 +29,12 @@
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.7",
     "@babel/preset-typescript": "^7.16.0",
+    "@storybook/addon-actions": "^6.4.9",
+    "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-links": "^6.4.9",
+    "@storybook/react": "^6.4.9",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^12.1.2",
     "@types/jest": "^27.0.3",
@@ -35,6 +42,7 @@
     "@types/styled-components": "^5.1.19",
     "@typescript-eslint/eslint-plugin": "^5.5.0",
     "@typescript-eslint/parser": "^5.5.0",
+    "babel-loader": "^8.2.3",
     "babel-plugin-styled-components": "^2.0.2",
     "eslint": "7",
     "eslint-config-next": "12.0.4",
@@ -42,8 +50,10 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-storybook": "^0.5.5",
     "husky": "^7.0.4",
     "jest": "^27.4.3",
+    "jest-styled-components": "^7.0.8",
     "lint-staged": "^12.1.2",
     "prettier": "2.5.1",
     "typescript": "^4.5.2"
