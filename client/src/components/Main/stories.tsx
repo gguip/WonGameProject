@@ -1,5 +1,4 @@
 import { Story, Meta } from '@storybook/react/types-6-0'
-// import {} from '@storybook/addon-knobs'
 import Main from '.'
 
 export default {
@@ -7,4 +6,6 @@ export default {
   component: Main
 } as Meta
 
-export const Basic: Story = () => <Main />
+export const Basic: Story = (args) => <Main {...args} />
+
+export const Default: Story = (args) => <Main {...args} />
